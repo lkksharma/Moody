@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.yourname.moody"
@@ -21,11 +23,17 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#000000"
       },
-      "package": "com.yourname.moody"
+      "package": "com.yourname.moody",
+      "minSdkVersion": 24
     },
     "scheme": "genred-spotify-auth",
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7c92b319-4062-4f9c-a23f-2cd5ecc18e0d"
+      }
     }
   }
 }
