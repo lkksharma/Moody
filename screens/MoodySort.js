@@ -108,8 +108,7 @@ const MoodySort = () => {
                         <Text style={{fontSize:40, color:"white", fontWeight:"700", backgroundColor:'rgba(82, 140, 84, 0.5)', borderRadius:20, justifyContent:"center", paddingHorizontal:"10", paddingVertical:"3", marginTop:5}}>moodify</Text>
                     </Pressable>
                     <Text style={{ fontSize: 30, color: "white", fontWeight: "700", textAlign: "center", marginTop: 20 }}>Click the button above to sort your songs by mood</Text>
-                    <Text style={{ fontSize: 20, color: "white", fontWeight: "700", textAlign: "center", marginTop: 20 }}>Sorted songs:</Text>
-                    <Text style={{color:"white"}}>{JSON.stringify(sorted)}</Text>
+                    
 
         </ScrollView>
     </LinearGradient>
