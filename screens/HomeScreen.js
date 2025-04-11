@@ -137,7 +137,7 @@ const HomeScreen = () => {
 	// 	 console.log("Top Artists state changed:", topArtists);
 	//   }, [topArtists])
 	console.log("Top Artists: ");
-	console.log(topArtists);
+	console.log(recentlyPlayed);
 	return (
 		<LinearGradient colors={["#040306", "#131624"]} style={{ flex: 1 }}>
 			<ScrollView>

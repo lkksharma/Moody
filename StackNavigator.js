@@ -8,6 +8,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ProfileScreen from './screens/ProfileScreen';
 import LoginScreen from './screens/LoginScreen';
 import LikedSongsScreen from './screens/LikedSongsScreen';
+import MoodySort from './screens/MoodySort';
+import SortedTracks from './screens/SortedTracks';
 
 const Tab = createBottomTabNavigator();
 
@@ -65,6 +67,10 @@ function Navigation(){
         <Stack.Screen name="Login" component={LoginScreen} options={{headerShown:false}}/>
         <Stack.Screen name="Main" component= {BottomTabs} options={{headerShown:false}}/>
         <Stack.Screen name="Liked" component={LikedSongsScreen} options={{headerShown:false}}/>
+        <Stack.Group screenOptions={{presentation:"modal"}}>
+          <Stack.Screen name="Sort" component={MoodySort} options={{headerShown:false}}/> 
+          <Stack.Screen name="Moodified" component={SortedTracks} options={{headerShown:false}}/> 
+        </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>
   )

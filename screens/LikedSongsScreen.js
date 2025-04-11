@@ -74,6 +74,7 @@ const LikedSongsScreen = () => {
 
 		fetchTracks();
 		getSavedTracks();
+		console.log(savedTracks);
 		let interval;
 		const updateProgress = async () => {
 			const accessToken = await AsyncStorage.getItem("token");
@@ -246,6 +247,7 @@ const LikedSongsScreen = () => {
 							/>
 						</Pressable>
 						<Pressable
+							onPress={() => navigation.navigate("Sort")}
 							style={{
 								marginHorizontal: 10,
 								backgroundColor: "#42275a",
